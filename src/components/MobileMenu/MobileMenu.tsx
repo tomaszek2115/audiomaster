@@ -1,0 +1,22 @@
+// src/components/MobileMenu/MobileMenu.tsx
+import { Link } from "react-router-dom";
+import "./MobileMenu.css";
+
+interface MobileMenuProps {
+  onClose: () => void;
+}
+
+export default function MobileMenu({ onClose }: MobileMenuProps) {
+  return (
+    <div className="mobile-menu-overlay">
+      <button className="close-button" onClick={onClose}>✕</button>
+      <nav className="mobile-nav">
+        <Link to="/" onClick={onClose}>Audiomaster</Link>
+        <hr className="mobile-nav-divider" />
+        <Link to="/projects" onClick={onClose}>Oferta</Link>
+        <Link to="/contact" onClick={onClose}>Kontakt</Link>
+        <Link to="/about" onClick={onClose}>O firmie</Link>
+      </nav>
+    </div>
+  );
+}

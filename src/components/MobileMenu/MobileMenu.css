@@ -1,0 +1,43 @@
+/* src/components/MobileMenu/MobileMenu.css */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(18px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-nav-divider {
+  width: 60%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 1rem 0;
+}

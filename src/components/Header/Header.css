@@ -1,0 +1,104 @@
+/* src/components/Header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  height: 60px; /* set an explicit height if needed */
+  box-sizing: border-box; /* ensure padding doesn't collapse */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(16px);
+  color: #fff;
+  z-index: 100;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition:  color 0.3s ease;
+}
+
+.logo:hover {
+  color: rgb(0, 128, 255);
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem; /* increased from 1.5rem to spread out links more */
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.nav a {
+  color: #ccc;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px; /* spacing for underline */
+  transition: color 0.3s ease;
+}
+
+/* Underline effect on hover using ::after */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+/* On hover, expand underline */
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav.open a {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}

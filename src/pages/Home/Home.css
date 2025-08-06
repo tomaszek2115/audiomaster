@@ -1,0 +1,98 @@
+.home {
+  padding: 4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeInGrow 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.intro p {
+  font-size: 2rem;
+  font-weight: 100;
+  color: rgb(200, 166, 166);
+  flex: 1 1 200px;
+  max-width: 300px;
+
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInGrow 0.8s ease forwards;
+}
+
+.intro p:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.intro p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.intro p:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInGrow {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: rgb(0, 128, 255);
+  margin-left: 0.5rem;
+
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeInGrow 0.5s ease forwards;
+}
+
+.intro p:nth-child(1) .icon {
+  animation-delay: 1.9s; /* after h1 and p1 text */
+}
+
+.intro p:nth-child(2) .icon {
+  animation-delay: 2.2s;
+}
+
+.intro p:nth-child(3) .icon {
+  animation-delay: 2.5s;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInGrow 0.6s ease forwards;
+}
+
+.gallery img:nth-child(1) { animation-delay: 3.2s; }
+.gallery img:nth-child(2) { animation-delay: 3.4s; }
+.gallery img:nth-child(3) { animation-delay: 3.6s; }
+.gallery img:nth-child(4) { animation-delay: 3.8s; }
