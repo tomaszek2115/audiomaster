@@ -3,8 +3,8 @@
   text-align: center;
 }
 
-h1 {
-  font-size: 5rem;
+.home h1 {
+  font-size: 4rem;
   font-weight: 800;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -13,6 +13,17 @@ h1 {
   transform: scale(0.5);
   animation: fadeInGrow 1s ease forwards;
   animation-delay: 1.2s;
+}
+
+.home h2 {
+  font-size: 2rem;
+  font-family: 'montserrat', sans-serif;
+  padding: 1.5rem;
+
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeInGrow 1s ease forwards;
+  animation-delay: 3.2s;
 }
 
 .intro {

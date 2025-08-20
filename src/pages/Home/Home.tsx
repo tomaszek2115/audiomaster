@@ -16,6 +16,7 @@ export default function Home() {
           OŚWIETLENIE&nbsp;<FaLightbulb className="icon" />
         </p>
       </div>
+      <h2>Nasze realizacje</h2>
       <div className="gallery">
         <img src="/images/1.png"/>
         <img src="/images/2.png"/>
