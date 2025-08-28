@@ -6,11 +6,12 @@
   left: 0;
   width: 100%;
   padding: 1.5rem 2rem;
-  height: 60px; /* set an explicit height if needed */
-  box-sizing: border-box; /* ensure padding doesn't collapse */
+  /* height: 60px; */
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(16px);
   color: #fff;
