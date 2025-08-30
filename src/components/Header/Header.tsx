@@ -11,7 +11,7 @@ export default function Header() {
     <>
       <header className="header">
         <Link to="/" className="logo">
-          Audiomaster
+          <img src="/images/logo2.png" className="color"/>
         </Link>
 
         <button
