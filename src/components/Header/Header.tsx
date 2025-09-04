@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <Link to="/" className="logo">
+        <Link to="/home" className="logo">
           <img src="/images/logo2.png" className="color"/>
         </Link>
 
