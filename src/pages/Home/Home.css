@@ -23,7 +23,7 @@
   opacity: 0;
   transform: scale(0.5);
   animation: fadeInGrow 1s ease forwards;
-  animation-delay: 3.2s;
+  animation-delay: 2.8s;
 }
 
 .intro {
@@ -101,7 +101,7 @@
   animation: fadeInGrow 0.6s ease forwards;
 }
 
-.gallery img:nth-child(1) { animation-delay: 3.2s; }
-.gallery img:nth-child(2) { animation-delay: 3.4s; }
-.gallery img:nth-child(3) { animation-delay: 3.6s; }
-.gallery img:nth-child(4) { animation-delay: 3.8s; }
+.gallery img:nth-child(1) { animation-delay: 3s; }
+.gallery img:nth-child(2) { animation-delay: 3.2s; }
+.gallery img:nth-child(3) { animation-delay: 3.4s; }
+.gallery img:nth-child(4) { animation-delay: 3.6s; }

@@ -1,8 +1,44 @@
 .footer {
+  display: block;
+  background: linear-gradient(135deg, black 0%, rgb(28, 25, 25) 100%);
+  border-top: 1px solid #524c4c;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons .icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.25s;
+}
+
+.footer-icons .icon:hover {
+  color: rgb(0, 128, 255);
+}
+
+.footer-separator {
+  width: 90%;
+  margin: 1rem auto;
+  border: 0;
+  border-top: 1px solid #524c4c;
+}
+
+.copyright {
   text-align: center;
-  padding: 1rem;
-  color: #666;
-  font-size: 0.75rem;
-  background-color: transparent;
-  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
