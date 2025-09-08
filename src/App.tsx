@@ -15,7 +15,7 @@ export default function App() {
       <Header />
       <div className="content">
         <Routes>
-          <Route path="/audiomaster" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/offer" element={<Offer />} />
           <Route path="/contact" element={<Contact />} />
