@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <h2>Nasze realizacje</h2>
       <div className="gallery">
-        <img src="/images/1.png"/>
-        <img src="/images/2.png"/>
+        <img src={`${import.meta.env.BASE_URL}images/1.png`}/>
+        <img src={`${import.meta.env.BASE_URL}images/2.png`}/>
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <Link to="/" className="logo">
-          <img src="/images/logo2.png" className="color"/>
+        <Link to="/audiomaster" className="logo">
+          <img src={`${import.meta.env.BASE_URL}images/logo2.png`} className="color"/>
         </Link>
 
         <button
