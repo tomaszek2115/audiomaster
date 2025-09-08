@@ -23,7 +23,7 @@ export default function Header() {
         </button>
 
         <nav className="nav">
-          <Link to="/projects">Oferta</Link>
+          <Link to="/offer">Oferta</Link>
           <Link to="/contact">Kontakt</Link>
           <Link to="/about">O firmie</Link>
         </nav>

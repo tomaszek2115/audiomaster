@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Projects from "./pages/Offer/Offer";
+import Offer from "./pages/Offer/Offer";
 import Contact from "./pages/Contact/Contact";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/offer" element={<Offer />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

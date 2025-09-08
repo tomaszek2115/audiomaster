@@ -13,7 +13,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
       <nav className="mobile-nav">
         <Link to="/" onClick={onClose}>Audiomaster</Link>
         <hr className="mobile-nav-divider" />
-        <Link to="/projects" onClick={onClose}>Oferta</Link>
+        <Link to="/offer" onClick={onClose}>Oferta</Link>
         <Link to="/contact" onClick={onClose}>Kontakt</Link>
         <Link to="/about" onClick={onClose}>O firmie</Link>
       </nav>
