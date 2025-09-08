@@ -6,7 +6,7 @@ import App from './App.tsx'
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter basename="/audiomaster">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>

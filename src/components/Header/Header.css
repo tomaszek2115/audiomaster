@@ -79,6 +79,11 @@
   cursor: pointer;
 }
 
+.menu-toggle:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .menu-toggle {

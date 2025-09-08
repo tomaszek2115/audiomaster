@@ -26,8 +26,8 @@
 
 .close-button {
   position: absolute;
-  top: 1.5rem;
-  right: 2rem;
+  top: 2rem;
+  right: 2.2rem;
   font-size: 1.5rem;
   background: none;
   border: none;
@@ -40,4 +40,8 @@
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin: 1rem 0;
+}
+
+.logo {
+  size: 1rem;
 }
