@@ -1,7 +1,40 @@
 import "./Home.css"
+import Images from "./Images"
+import "yet-another-react-lightbox/styles.css";
+import {gallery} from "./gallery"
 import { FaVolumeUp, FaLightbulb, FaCubes, } from "react-icons/fa";
+import Lightbox from "yet-another-react-lightbox";
+import {
+  Download,
+  Fullscreen,
+  Zoom,
+} from "yet-another-react-lightbox/plugins";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
+  const [index, setIndex] = useState<number>(-1);
+
+    useEffect(() => {
+      const items = document.querySelectorAll(".image");
+  
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+  
+      items.forEach((item) => observer.observe(item));
+  
+      return () => observer.disconnect();
+    }, []);
+
   return (
     <div className="home">
       <h1>Techniczna obsługa eventów</h1>
@@ -17,10 +50,19 @@ export default function Home() {
         </p>
       </div>
       <h2>Nasze realizacje</h2>
-      <div className="gallery">
-        <img src={`${import.meta.env.BASE_URL}images/1.png`}/>
-        <img src={`${import.meta.env.BASE_URL}images/2.png`}/>
-      </div>
+      <Images
+        data={gallery}
+        onClick={(currentIndex) => setIndex(currentIndex)}
+      />
+
+      <Lightbox
+        plugins={[Download, Fullscreen, Zoom]}
+
+        index={index}
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        slides={gallery}
+      />
     </div>
   );
 }
