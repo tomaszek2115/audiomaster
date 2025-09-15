@@ -64,8 +64,8 @@ export default function Home() {
             <ul>
               <li>ALSPAW Scena mobilna 8m x 6m</li>
               <li>ALUSTAGE Podesty sceniczne 2m x 1m (60 sztuk)</li>
-              <li>ALUSTAGE Kratownica (ponad 30 metrów)</li>
-              <li>Barierki eventowe (100 sztuk)</li>
+              <li>ALUSTAGE Krata</li>
+              <li>Barierki antydemonstracyjne (100 sztuk)</li>
             </ul>
           </div>
         </div>
