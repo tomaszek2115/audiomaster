@@ -16,13 +16,47 @@
 }
 
 .home h2 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 4rem);
   padding: 1.5rem;
+  text-align: left;
+  margin-bottom: 0px;
 
   opacity: 0;
-  transform: scale(0.5);
-  animation: fadeInGrow 1s ease forwards;
-  animation-delay: 1.5s;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.home h3 {
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  font-weight: 600;
+  padding: 1.5rem;
+  padding-top: 0;
+  color: rgb(180, 180, 180);
+  text-align: left;
+  margin: 0px;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.home h3.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home h2.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.gallery-description {
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .intro {
@@ -84,6 +118,10 @@
 }
 
 .images-container {
+  background-color: #1e1e1e;
+  border: 1px solid #717171;
+  border-radius: 10px;
+  padding: 2rem;
   max-width: 100%;
   margin: 2rem auto;
   display: grid;
@@ -91,10 +129,13 @@
   gap: 1rem;
 }
 
-/* switch to 2 columns on >= 769px */
 @media (min-width: 769px) {
   .images-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home ContactButton {
+    padding-top: 2rem;
   }
 }
 
@@ -130,7 +171,7 @@
 
 .video {
   width: 100%;
-  height: 100vh;
+  height: 92vh;
 }
 
 .background-video {
@@ -159,4 +200,34 @@
   color: white;
   text-align: center;
   padding: 2rem;
+}
+
+.home .ContactButton {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+}
+
+.home .OfferButton {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+}
+
+.ContactButton.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.OfferButton.show {
+  opacity: 1;
+  transform: translateY(0);
 }

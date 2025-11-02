@@ -1,9 +1,11 @@
 import "./Home.css";
-import Images from "./Images";
 import "yet-another-react-lightbox/styles.css";
+import Images from "./Images";
+import ContactButton from "../../components/ContactButton/ContactButton";
+import OfferButton from "../../components/OfferButton/OfferButton";
+import Lightbox from "yet-another-react-lightbox";
 import { gallery } from "./gallery";
 import { FaVolumeUp, FaLightbulb, FaCubes } from "react-icons/fa";
-import Lightbox from "yet-another-react-lightbox";
 import { Download, Fullscreen, Zoom } from "yet-another-react-lightbox/plugins";
 import { useState, useEffect } from "react";
 
@@ -11,7 +13,7 @@ export default function Home() {
   const [index, setIndex] = useState<number>(-1);
 
   useEffect(() => {
-    const items = document.querySelectorAll(".image");
+    const items = document.querySelectorAll(".image, .ContactButton, .OfferButton, .home h3, .home h2");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -59,8 +61,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <h2>Nasze realizacje</h2>
+      <div className="gallery-description">
+        <h3>Kolekcja zdjęć z naszych ulubionych koncertów.
+         W galerii prezentujemy efekty naszej pracy: 
+         systemy nagłośnieniowe w akcji, oświetlenie tworzące klimat i ludzi,
+          którzy sprawiają, że scena ożywa.
+        </h3>
+        <ContactButton className="ContactButton"></ContactButton>
+        <OfferButton className="OfferButton"></OfferButton>
+      </div>
       <Images data={gallery} onClick={(currentIndex) => setIndex(currentIndex)} />
 
       <Lightbox

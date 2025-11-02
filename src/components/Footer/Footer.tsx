@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="footer-wrapper">
         <div className="info">
           <h3>Audiomaster Grzegorz Studencki</h3>
-          <p>+48 213 742 069</p>
-          <p>grzegorz.studencki@audiomaster.pl</p>
-          <p>warszawa ulica niebianskiego pokoju 88</p>
+          <p>+48 602 686 372</p>
+          <p>g.studencki@audiomaster.pl</p>
+          <p>Żywiec Sienkiewicza 9</p>
         </div>
         <div className="footer-icons">
           <a href="https://www.instagram.com/audiomaster.pl/" target="_blank" rel="noopener noreferrer">
