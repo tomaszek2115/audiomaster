@@ -42,3 +42,38 @@
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+.developer {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.developer-link {
+  text-align: center;
+  color: rgb(0, 128, 255);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1;
+}
+
+.developer-link:hover {
+  text-decoration: underline;
+}
+
+.devdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* force full-width row so it centers inside the footer */
+  flex: 1 1 100%;
+  width: 100%;
+  margin-top: 0.5rem; /* optional spacing */
+  margin-bottom: 1rem;
+}

@@ -1,5 +1,6 @@
 import "./Offer.css"
 import { useEffect } from "react";
+import { FaVolumeUp, FaLightbulb, FaCubes } from "react-icons/fa";
 
 export default function Home() {
   useEffect(() => {
@@ -31,7 +32,10 @@ export default function Home() {
             <img src={`${import.meta.env.BASE_URL}images/dj3000.jpg`}/>
           </div>
           <div className="offer-item-text">
-            <h2>Nagłośnienie</h2>
+            <div className="offer-item-title">
+              <h2>Nagłośnienie</h2>
+              <FaVolumeUp className="icon" />
+            </div>
             <p>
               Profesjonalne nagłośnienie na różnego rodzaju imprezy,
               od małych spotkań po duże wydarzenia plenerowe.
@@ -54,7 +58,10 @@ export default function Home() {
             <img src={`${import.meta.env.BASE_URL}images/mobilka.jpg`}/>
           </div>
           <div className="offer-item-text">
-            <h2>Sceny</h2>
+            <div className="offer-item-title">
+              <h2>Sceny</h2>
+              <FaCubes className="icon" />
+            </div>
             <p>
               Wynajem i montaż scen na różnego rodzaju wydarzenia,
               od małych konferencji po duże plenerowe koncerty.
@@ -74,7 +81,10 @@ export default function Home() {
             <img src={`${import.meta.env.BASE_URL}images/pointe.png`}/>
           </div>
           <div className="offer-item-text">
-            <h2>Oświetlenie</h2>
+            <div className="offer-item-title">
+              <h2>Oświetlenie</h2>
+              <FaLightbulb className="icon" />
+            </div>
             <p>
               Szeroki wachlarz oświetlenia, w tym oświetlenie sceniczne, architektoniczne
                i dekoracyjne.

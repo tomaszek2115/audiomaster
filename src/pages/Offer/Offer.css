@@ -7,13 +7,13 @@
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
     color: white;
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
 
     opacity: 0;
-    transform: scale(0.5);
-    animation: fadeInGrow 1s ease forwards;
-    animation-delay: 0.2s;
+    transform: translateY(40px);
+    animation: fadeInGrow 0.6s ease forwards;
+    animation-delay: 0s;
 }
 
 .offer-item {
@@ -27,7 +27,7 @@
   gap: 1.5rem;
   opacity: 0;
   transform: translateX(-50px); /* slide in from left */
-  transition: all 0.8s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .offer-item img {
@@ -39,6 +39,12 @@
 
 .offer-item-text ul {
     font-weight: 800;
+}
+
+.offer-item-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 @media (max-width: 768px) {
