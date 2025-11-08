@@ -42,7 +42,7 @@ export default function Home() {
           playsInline
           className="background-video"
         >
-          <source src="/videos/background.mp4" type="video/mp4" />
+          <source src="/videos/background.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
         <div className="overlay"></div>

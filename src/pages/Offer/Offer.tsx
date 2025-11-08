@@ -39,8 +39,8 @@ export default function Home() {
             <p>
               Profesjonalne nagłośnienie na różnego rodzaju imprezy,
               od małych spotkań po duże wydarzenia plenerowe.
-              Nasz sprzęt zapewnia doskonałą jakość dźwięku i niezawodność oraz umożliwia
-              obsługę techniczną zespołów muzycznych, konferencji i innych wydarzeń.
+              Nasz sprzęt zapewnia doskonałą jakość dźwięku i niezawodność oraz umożliwia obsługę techniczną zespołów muzycznych, konferencji i innych wydarzeń.
+              Oferujemy również realizację nagrań wielośladowych.
             </p>
             <ul>
               <li>Allen & Heath dLive S7000</li>

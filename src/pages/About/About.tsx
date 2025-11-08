@@ -1,8 +1,17 @@
-export default function Home() {
+import "./About.css";
+
+export default function About() {
   return (
-    <div style={{ padding: "4rem", textAlign: "center" }}>
-      <h2>About Audiomaster</h2>
-      <p>about content goes here.</p>
+    <div className="about">
+      <h1>O nas</h1>
+      <p className="about-description">
+        Jesteśmy firmą specjalizującą się w technicznej obsłudze wydarzeń – od
+        kameralnych spotkań, przez koncerty plenerowe, aż po duże produkcje
+        multimedialne. Od ponad 30 lat działamy w branży, zdobywając doświadczenie
+        i zaufanie klientów z różnych sektorów. Naszym celem jest tworzenie
+        niezapomnianej atmosfery poprzez perfekcyjne nagłośnienie, efektowne
+        oświetlenie i bezpieczne konstrukcje sceniczne.
+      </p>
     </div>
   );
 }
